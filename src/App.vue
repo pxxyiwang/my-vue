@@ -2,7 +2,7 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="中文"/>
-    <span></span>
+    <span>{{test}}</span>
   </div>
 </template>
 
@@ -13,9 +13,15 @@ export default {
   name: 'app',
   components: {
     HelloWorld
+  },
+  data(){
+    return {
+      test: '复制回复的回复的回复规划'
+    }
   }
 }
 </script>
+
 
 <style>
 #app {
